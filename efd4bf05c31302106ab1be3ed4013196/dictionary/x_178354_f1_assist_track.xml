@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3e35ff85c39302106ab1be3ed4013137" label="Track" max_length="40" name="x_178354_f1_assist_track" type="collection">
+        <element label="Full name" max_length="200" name="full_name" type="string"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" reference_qual="countryISNOTEMPTY^EQ" reference_qual_condition="countryISNOTEMPTY^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <index name="index">
+            <element name="location"/>
+        </index>
+    </element>
+</database>
